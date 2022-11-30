@@ -197,7 +197,7 @@ gat <网关> 设定该dhcp网关 //gatway <网关>
 ne <网段> ma <子网掩码> 设定子网掩码及网段 //network <网段> mask <子网掩码>
 dns <DNS> 设定DNS服务器地址 //dns-list <DNS>
 exc <IP> 将特定ip排除IP池 //exculded-ip-address <IP>
-ease day <NUM> hou <NUM> min <NUM> 设定租约时间 //ease day <天数> hour <小时数> minute <分数>
+le d <NUM> h <NUM> m <NUM> 设定租约时间 //lease day <天数> hour <小时数> minute <分数>
 in v<VID> 进入VlanIF //interface vlanif <VID>
 ip a <IP> <子网掩码> 设定网关 //ip address <IP> <子网掩码>
 dhcp sel glo 设定dhcp范围为全局 //dhcp select global
