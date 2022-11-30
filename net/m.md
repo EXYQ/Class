@@ -178,6 +178,7 @@ vrrp v <VRID> p <优先级> 设定指定vrrp的优先级(默认优先级为100, 
 - VRRP通过以下指令才能在特定接口出现故障后来切换另一台路由器
 ```
 vrrp v <VRID> t in <接口(不是网关配置接口)> re <优先级> 在需检测接口出现故障后, 立即削减指定优先级, 使本路由器的VRRP优先级降低而使用备用路由器的VRRP //vrrp vrid <VRID> track in <需检测接口> reduced <优先级>
+vrrp v <VRID> pre ti de <Seconds> 设定VRRP出故障后的抢占延时 //vrrp vrid <VRID> preemtp-mode timer delay <抢占秒数>
 ```
 - 查看VRRP状态
 ```
@@ -196,6 +197,7 @@ gat <网关> 设定该dhcp网关 //gatway <网关>
 ne <网段> ma <子网掩码> 设定子网掩码及网段 //network <网段> mask <子网掩码>
 dns <DNS> 设定DNS服务器地址 //dns-list <DNS>
 exc <IP> 将特定ip排除IP池 //exculded-ip-address <IP>
+ease day <NUM> hou <NUM> min <NUM> 设定租约时间 //ease day <天数> hour <小时数> minute <分数>
 in v<VID> 进入VlanIF //interface vlanif <VID>
 ip a <IP> <子网掩码> 设定网关 //ip address <IP> <子网掩码>
 dhcp sel glo 设定dhcp范围为全局 //dhcp select global
