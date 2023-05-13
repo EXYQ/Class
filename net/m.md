@@ -1,20 +1,5 @@
 # 华为1+x证书考试中拓展指令
 
-### 链路聚合
-
-- 将多条线路变为一条逻辑线路
-- 最大线路数为8, 且需为同速率接口
-```
-in et1 进入Eth-Trunk1链路聚合端口中 //interface Eth-Trunk 1
-mo la 设定链路聚合模式为Lacp
-trun g 0/0/3 to 0/0/4 0/0/5 将g速率的3, 4, 5接口添加为成员接口
-p l t 将链路聚合端口工作模式设为trunk
-p t a v 10 20 将vlan10 vlan20放行
-max act <接口数> 设置最大活动接口数 //max active-linknumber <接口数>
-la p <优先级> 设置当前接口优先级(从少到多,从高到低) //lacp priority <优先级>
-dis et 1 显示eth1链路聚合端口的状态
-```
-
 ### 单臂路由(路由器子接口)
 
 - loopback0 为测试端口又名环回端口
