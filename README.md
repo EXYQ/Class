@@ -3,6 +3,7 @@
 ### 科目目录
 - [网络规划与搭建](net/README.md)
 - [网络数据库构建与运行](tsql/README.md)
+- [静态网站](html/README.md)
 
 ### 本学期课程表
 
